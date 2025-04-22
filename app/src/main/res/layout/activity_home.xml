@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".HomeActivity"
+    android:background="#E0060671">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:gravity="end">
+
+        <ImageView
+            android:id="@+id/buttonLogout"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/ic_logout"
+            android:clickable="true"
+            android:focusable="true"
+            android:contentDescription="Logout" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/autour_one"
+            android:text="Welcome to RedZap Pay!"
+            android:textSize="50sp"
+            android:textColor="#F5F5DC"
+            android:layout_marginBottom="32dp"
+            android:textAlignment="center"
+            android:paddingTop="20dp"
+            android:paddingBottom="30dp"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal">
+
+
+
+            <Button
+                android:id="@+id/buttonQrGenerator"
+                android:layout_width="300dp"
+                android:layout_height="100dp"
+                android:text="QR Generator"
+                android:textSize="30sp"
+                android:fontFamily="@font/afacad_semibold"
+                android:layout_marginBottom="16dp"/>
+
+            <Button
+                android:id="@+id/buttonTransactionHistory"
+                android:layout_width="300dp"
+                android:layout_height="100dp"
+                android:text="Transaction History"
+                android:textSize="30sp"
+                android:fontFamily="@font/afacad_semibold"
+                android:layout_marginBottom="16dp"/>
+            <Button
+                android:id="@+id/buttonProfile"
+                android:layout_width="300dp"
+                android:layout_height="100dp"
+                android:text="Profile"
+                android:textSize="30sp"
+                android:fontFamily="@font/afacad_semibold"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

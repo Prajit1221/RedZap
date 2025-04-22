@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "969519457858",
+    "project_id": "redzap-pay-5d9e2",
+    "storage_bucket": "redzap-pay-5d9e2.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:969519457858:android:7647d655da21d13c5cafdb",
+        "android_client_info": {
+          "package_name": "com.rediy.redzappay"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDVYT8RstP8Lwl1yL6f-U4smS-q4Hv1dgg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

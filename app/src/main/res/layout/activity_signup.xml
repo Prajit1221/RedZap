@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E0060671"
+    android:padding="16dp"
+    tools:context=".SignupActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:gravity="center"
+            android:fontFamily="@font/autour_one"
+            android:text="RedZap Pay Sign Up"
+            android:textColor="#F5F5DC"
+            android:textSize="40dp"
+            android:layout_marginBottom="24dp"/>
+
+        <LinearLayout
+            android:layout_width="356dp"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:padding="24dp">
+
+            <EditText
+                android:id="@+id/editTextName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/afacad_semibold"
+                android:hint="Name"
+                android:textColorHint="#525252"
+                android:inputType="textPersonName"
+                android:textSize="20dp"
+                android:textColor="@color/black"
+                android:background="#DADADA"
+                android:layout_marginBottom="12dp"/>
+
+            <EditText
+                android:id="@+id/editTextDOB"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/afacad_semibold"
+                android:hint="Date of Birth (YYYY-MM-DD)"
+                android:inputType="date"
+                android:textSize="20dp"
+                android:textColorHint="#525252"
+                android:background="#DADADA"
+                android:textColor="@color/black"
+                android:layout_marginBottom="12dp"/>
+
+            <EditText
+                android:id="@+id/editTextMobile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/afacad_semibold"
+                android:hint="Mobile Number"
+                android:inputType="phone"
+                android:textSize="20dp"
+                android:textColorHint="#525252"
+                android:background="#DADADA"
+                android:textColor="@color/black"
+                android:layout_marginBottom="12dp"/>
+
+            <EditText
+                android:id="@+id/editTextEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/afacad_semibold"
+                android:hint="Email"
+                android:inputType="textEmailAddress"
+                android:textSize="20dp"
+                android:textColorHint="#525252"
+                android:background="#DADADA"
+                android:textColor="@color/black"
+                android:layout_marginBottom="12dp"/>
+
+            <EditText
+                android:id="@+id/editTextPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/afacad_semibold"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:textSize="20dp"
+                android:textColorHint="#525252"
+                android:background="#DADADA"
+                android:textColor="@color/black"
+                android:layout_marginBottom="12dp"/>
+
+            <EditText
+                android:id="@+id/editTextUpiId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/afacad_semibold"
+                android:hint="UPI ID(s) - comma separated (optional)"
+                android:inputType="textMultiLine"
+                android:textSize="20dp"
+                android:textColorHint="#525252"
+                android:background="#DADADA"
+                android:textColor="@color/black"
+                android:layout_marginBottom="24dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+                <Button
+                    android:id="@+id/buttonSignup"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/afacad_semibold"
+                    android:text="Sign Up"
+                    android:textSize="25dp"/>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textViewLoginLink"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:fontFamily="@font/afacad_semibold"
+                android:text="Already have an account? Log in"
+                android:textColor="#E91E63"
+                android:textSize="20dp"
+                android:gravity="center_horizontal"/>
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                style="?android:attr/progressBarStyleLarge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:layout_marginTop="16dp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

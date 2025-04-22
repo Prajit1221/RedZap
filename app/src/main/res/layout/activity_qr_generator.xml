@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"> <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="15dp"
+    android:background="#E0060671"
+    tools:context=".QRGeneratorActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/autour_one"
+        android:text="QR Code Generator"
+        android:textSize="30dp"
+        android:textColor="#F5F5DC"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="24dp"/>
+
+    <EditText
+        android:id="@+id/editTextAmount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Amount"
+        android:inputType="numberDecimal"
+        android:textSize="30sp"
+        android:fontFamily="@font/afacad_semibold"
+        android:layout_marginBottom="16dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="UPI ID:"
+                android:textSize="35dp"
+                android:fontFamily="@font/afacad_semibold"
+                android:textColor="#F5F5DC"
+                android:layout_marginEnd="8dp"/>
+
+            <EditText
+                android:id="@+id/editTextUpiIdManual"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="Enter UPI ID"
+                android:inputType="text"
+                android:textSize="20dp"
+                android:fontFamily="@font/afacad_semibold"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+            <Spinner
+                android:id="@+id/spinnerUpiIds"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:minWidth="120dp"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/buttonGenerateQr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Generate QR Code"
+        android:textSize="22sp"
+        android:fontFamily="@font/afacad_semibold"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="24dp"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/layout">
+        <ImageView
+            android:id="@+id/imageViewQrCode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:layout_gravity="center_horizontal"
+            android:visibility="gone"
+            android:contentDescription="Generated QR Code" />
+    </RelativeLayout>
+    <Button
+        android:id="@+id/buttonShareQr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Share QR Code"
+        android:textSize="22sp"
+        android:fontFamily="@font/afacad_semibold"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="16dp"
+        android:visibility="gone"/>
+
+</LinearLayout>
+</ScrollView>
